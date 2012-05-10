@@ -274,7 +274,7 @@ Le GRL s’est ainsi exporté en tant que concept, donnant depuis naissance à d
 <script>
 	
 	$(".picto").live('click',function(){
-	$('.descr').addClass("invisible").hide("slow");
+		$('.descr').addClass("invisible").hide("slow");
 		$(this).parent().children('.descr').show("slow").removeClass("invisible");
 	});
 	
@@ -299,36 +299,8 @@ Le GRL s’est ainsi exporté en tant que concept, donnant depuis naissance à d
 		return false;
 	});
 	
-	</script>
-
-<script>
-
-
-	/*$("#prog").live("click", function(){
-		$(".scrollerzone").scrollTo( {top:'0px', left:'0px'},800,{onAfter: changeToProg()});
-		return false;
-	});
-	
-	$("#inte").live("click", function(){
-		$(".scrollerzone").scrollTo( {top:'0px', left:'962px'},800,{onAfter:changeToInte()});
-		return false;
-	});
-	$("#strea").live("click", function(){
-			$(".scrollerzone").scrollTo({top:'547px', left:'962px'},800,{onAfter:changeToStrea()});
-		return false;
-	});
-		$("#treso").live("click", function(){
-			$(".scrollerzone").scrollTo({top:'547px', left:'0px'},800, {onAfter:changeToTreso()});
-		return false;
-	});*/
-	
-function changeToProg(){$('#titre').removeClass().addClass('rose').html('Programme');$('#page_cont').slideDown('slow').load('programme/programme.html #programme');};
-//function changeToProg(){$('#titre').removeClass().addClass('rose').html('Programme');$('#page_cont').slideDown('slow').load('https://docs.google.com/spreadsheet/pub?key=0Ak7azP2wrxrydE5sZk9aaG1jc1NYcUZETm1EQUs2Q3c&single=true&gid=0&output=html');};
-function changeToStrea(){$('#titre').removeClass().addClass('orange').html('Stream');$('#page_cont').slideUp('slow');};
-function changeToInte(){$('#titre').removeClass().addClass('green').html('Intervenants');$('#page_cont').slideUp('slow').load('intervenants/intervenants.html #intervenants').slideDown('slow');};
-function changeToTreso(){$('#titre').removeClass().addClass('gris').html('Trésor !');};
-	
 </script>
+
 <script>
 	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
 	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
