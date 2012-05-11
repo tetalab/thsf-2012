@@ -132,6 +132,100 @@ background-color:#FFF;
 .invisible{
 display:none;
 }
+	body{background-repeat: no-repeat; background-image: url('../img/thsf2012.png');background-color:#e2007a;
+	margin-bottom: 20px;}
+	body { font-family: Liquorstore-Regular; }	
+	.conferences{background-image: url('../img/conferences.png');background-color:#e2007a;}
+	.ateliers{background-image: url('../img/ateliers.png');background-color:#b9b4a8;}
+	.performances{background-image: url('../img/performances.png');background-color:#bacc00;}
+	.concerts{background-image: url('../img/concerts.png');background-color:#f5a000;}
+	.thsf2012{background-image: url('../img/thsf2012.png');background-color:#e2007a;}
+	.streaming{background-image: url('../img/streaming.png');background-color:#504A3C;}
+	#conferences,#performances,#concerts,#ateliers,#thsf2012{width:800px;margin-left:110px;}
+	
+	.LiquorstoreJazz-Italic { 
+		font-family: LiquorstoreJazz-Italic;
+		font-weight: normal;
+		font-style: normal;
+	}
+	.Liquorstore3D { 
+		font-family: Liquorstore3D;
+		font-weight: normal;
+		font-style: normal;
+	}
+	.Liquorstore-Italic { 
+		font-family: Liquorstore-Italic;
+		font-weight: normal;
+		font-style: normal;
+	}
+	.LiquorstoreJazz { 
+		font-family: LiquorstoreJazz;
+		font-weight: normal;
+		font-style: normal;
+	}
+	.Liquorstore-Regular { 
+		font-family: Liquorstore-Regular;
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+	.green {color: #A7D259;}
+	.orange {color: #D48900;}
+	.gris {color: #9D9A96;}
+	.gris_sombre {color: #504A3C;}
+	.rose {color: #e2007a;}
+	.noir{color:#000;}
+	.aubergine{color:#420026}
+	.fond_aubergine{background-color:#420026;}
+	
+	.headee{position:absolute;top:0;left:0;z-index:45;}
+	/*.overcont{position:absolute;top:175px;left:auto;z-index:47;}
+	.overcont_1{position:absolute;top:190px;left:auto;z-index:48;}*/
+	#page_cont{}	
+	.prog, .inte, .strea, .treso {text-align: center;}
+	.prog a, .inte a, .strea a, .treso a {text-align: center;text-decoration: none;font-family: 'Ropa';font-size:1.3em;color:#fff;background-color:#390B28;padding:.2em .3em .2em .3em;}
+	
+	.g1 {background-color:#420026; padding:.2em .2em .3em .2em;color:#fff;margin-bottom:.8em;font-size:1.3em;}
+	.descr {background-color:#420026; padding:.2em .2em .3em .2em;color:#fff;margin-bottom:.8em;font-size:.8em;}
+	.heure{font-variant: small-caps;padding:0 .5em 0 .5em;color:#e2007a;}
+	.place{font-variant: small-caps;padding:0 .5em 0 .5em;color:#C3C3C3;}
+	a.teleprogramme{text-decoration: none;color:#fff;font-size:1em;padding-top:1em}
+	a.teleprogramme{text-decoration: none;color:#fff;}		
+
+	.jour{padding-left:.3em;padding-top:.5em;color:#fff;background-color:transparent;text-align:left;font-size:3em;font-family: 'LiquorstoreJazz';
+	font-weight: normal;
+	font-style: normal;}
+	
+	 @font-face {font-family: 'Modern Pictograms';src: url('../font/modernpics.otf');}
+	 @font-face {font-family: 'thsf 2012';src: url('../font/thsfdeuxmilledouze.otf');}
+
+	.picto{font-family: 'thsf 2012';color:#fff;text-align: right;cursor:pointer;font-size:1.3em;cursor:pointer;padding-left:.5em;padding-right:.5em;}
+	/*.picto:after{content:"|";}*/
+	.picto:hover{color:#e2007a;}
+	.conf{/*background-color:#e2007a;*/font-family: 'thsf 2012';src: url('../font/thsfdeuxmilledouze.otf');}
+	.conf:before{content: ")";padding:0 .5em 0 .5em;}	
+	.atel{/*background-color:#b9b4a8;*/font-family: 'thsf 2012';src: url('../font/thsfdeuxmilledouze.otf');}
+	.atel:before{content: "(";padding:0 .5em 0 .5em;}
+	
+	.conc{/*background-color:#f5a000;*/font-family: 'thsf 2012';src: url('../font/thsfdeuxmilledouze.otf');}
+	.conc:before{content:"*";padding:0 .5em 0 .5em;}
+	
+	.pe@rf{/*background-color:#bacc00;*/font-family: 'thsf 2012';src: url('../font/thsfdeuxmilledouze.otf');}
+	.perf:before{content:"'";padding:0 .5em 0 .5em;}
+	
+	.tri{list-style-type: none;text-align: center;}
+	.tri li {display:inline;padding:.4em;}
+		.overcont_1{position:absolute;top:200px;left:25px;}
+	#navbar{background-color:#000; position:absolute; top:32px;width:100%;font-size:1.2em;letter-spacing:2px;}
+	#navbar a{/*padding:1px 0 3px 0;margin:0 -3px 0 0;*/text-decoration:none;font-weight:normal;}
+	#navbar a:hover{color:#fff;}
+	#navbar a:visited{color:transparent;}
+	.current{color:#fff;}
+	#navbar a img{padding:0;margin:0;}
+	#bt_streaming{position:absolute;top:2px;right:25px;}
+	#bt_contact{position:absolute;top:-25px;right:25px;}
+	.nav_sepa{color:#C1C1C1;}
+
 
 /* =============================================================================
    Media Queries
