@@ -750,6 +750,7 @@
       $('section').addClass('invisible');
       $(lasection).removeClass('invisible');
       $('body').removeClass().addClass(lasection.slice(1));
+      window.location.hash = lasection;
       return false;
     });
   });
