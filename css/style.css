@@ -461,9 +461,6 @@ display:none;
 	transition:all .3s ease-out;
 	position: absolute;
 	top: 3px;
-	-webkit-font-smoothing:antialiased;
-	-moz-font-smoothing:antialiased;
-	font-smoothing:antialiased;
 }
 
 .csstransforms #navbar a.rotatif.green span {color: #A7D259;}
