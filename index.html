@@ -327,7 +327,7 @@ subjex, un snare s’éteind, un gros kick s’éveille ..."</div></div>
 <script src="js/script.js"></script>
 <script src="js/jquery.scrollTo-1.4.2-min.js"></script>
 <script>
-	
+jQuery(document).ready(function ($) {
 	$(".picto").live('click',function(){
 		$('.descr').addClass("invisible").hide("slow");
 		$(this).parent().children('.descr').show("slow").removeClass("invisible");
@@ -353,7 +353,7 @@ subjex, un snare s’éteind, un gros kick s’éveille ..."</div></div>
 		$('body').removeClass().addClass(laclass);
 		return false;
 	});
-	
+});
 </script>
 
 </body>
