@@ -703,6 +703,26 @@
 <script>
   jQuery(document).ready(function ($) {
 
+    var hash = window.location.hash;
+
+    if( hash.length > 0 && 
+        ( hash === "#thsf2012"      ||
+          hash === "#conferences"   ||
+          hash === "#performances"  ||
+          hash === "#ateliers"      ||
+          hash === "#concerts"      ||
+          hash === "#streaming"
+        )
+    ) {
+      $('#navbar a').removeClass('current');
+      $("#navbar a[href=" + hash + "]").addClass('current');
+
+      $('section').addClass('invisible');
+      $(hash).removeClass("invisible");
+
+      $('body').removeClass().addClass(hash.slice(1));
+    }
+
     // Picto click to open event description
     //
     // Display event description if currently hidden
@@ -720,20 +740,16 @@
 
     $('#navbar a').live('click',function(){
       $('#navbar a').removeClass('current');
-
       $(this).addClass("current");
+
       var lasection=$(this).attr("href");
       if (lasection=="mailto:contact@tetalab.org"){
         return true;
       }
 
-      $('section').slideUp("slow").addClass('invisible');
-
-      $(lasection).removeClass().delay(800).slideDown("slow");
-      var laclass=$(lasection).attr("id");
-      //console.log('laclass '+laclass);	
-
-      $('body').removeClass().addClass(laclass);
+      $('section').addClass('invisible');
+      $(lasection).removeClass('invisible');
+      $('body').removeClass().addClass(lasection.slice(1));
       return false;
     });
   });
