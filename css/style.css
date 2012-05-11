@@ -267,3 +267,42 @@ display:none;
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
 }
+
+/* =============================================================================
+   Effets du menu
+   ========================================================================== */
+#navbar a.rotatif span{
+	display: none; /* pour les navigateurs moisis jusqu'aux os (pour ne pas citer IE) */
+}
+
+.csstransforms #navbar a.rotatif {
+	color: transparent; /* on rend la typo invisible pour */
+}
+
+.csstransforms #navbar a.rotatif span {
+	display: inline;
+	-webkit-transition:all .3s ease-out;
+	-moz-transition:all .3s ease-out;
+	-ms-transition:all .3s ease-out;
+	-o-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+	position: absolute;
+	top: 3px;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+}
+
+.csstransforms #navbar a.rotatif.green span {color: #A7D259;}
+.csstransforms #navbar a.rotatif.orange span {color: #D48900;}
+.csstransforms #navbar a.rotatif.gris span {color: #9D9A96;}
+.csstransforms #navbar a.rotatif.gris_sombre span {color: #504A3C;}
+.csstransforms #navbar a.rotatif.rose span {color: #e2007a;}
+.csstransforms #navbar a.rotatif.noir span {color:#000;}
+.csstransforms #navbar a.rotatif.aubergine span {color:#420026}
+.csstransforms #navbar a.rotatif.fond_aubergine span {background-color:#420026;}
+.csstransforms #navbar a.rotatif.current span {color:#fff;}
+
+.csstransforms #navbar a.rotatif:hover span {
+	-webkit-transform: rotateY(180deg);
+}
