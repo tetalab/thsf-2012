@@ -743,14 +743,15 @@
       $(this).addClass("current");
 
       var lasection=$(this).attr("href");
+      window.location.hash = lasection;
+
       if (lasection=="mailto:contact@tetalab.org"){
         return true;
       }
 
-      $('section').addClass('invisible');
+      $('section').addClass('invisible').delay(800);
       $(lasection).removeClass('invisible');
       $('body').removeClass().addClass(lasection.slice(1));
-      window.location.hash = lasection;
       return false;
     });
   });
