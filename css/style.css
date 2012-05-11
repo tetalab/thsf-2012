@@ -226,6 +226,177 @@ display:none;
 	#bt_contact{position:absolute;top:-25px;right:25px;}
 	.nav_sepa{color:#C1C1C1;}
 
+  #thsf2012 h1.kesako {
+    display:block;
+    z-index:544;
+    font-size:5em;
+    position:absolute;
+    top:280px;
+    left:120px;
+    width:100%;
+    background-color:transparent;
+    text-align:left;
+  }
+
+  #thsf2012 p.kesako {
+    color:#fff;
+    display:block;
+    z-index:545;
+    font-size:1.1em;
+    position:absolute;
+    top:375px;
+    left:122px;
+    width:520px;
+    background-color:transparent;
+    text-align:justify;
+    line-height:1.3em;
+  }
+
+  #thsf2012 h1.longer {
+    display:block;
+    z-index:546;
+    font-size:2.8em;
+    position:absolute;
+    top:440px;
+    left:416px;
+    width:100%;
+    background-color:transparent;
+    text-align:justify;
+    line-height:.8em;
+  }
+
+  #thsf2012 p.longer {
+    color:#fff;
+    display:block;
+    z-index:547;
+    font-size:1.1em;
+    position:absolute;
+    top:500px;
+    left:416px;
+    width:520px;
+    background-color:transparent;
+    text-align:justify;
+    line-height:1.3em;
+  }
+
+  #thsf2012 h1.concret {
+    display:block;
+    z-index:548;
+    font-size:3.5em;
+    position:absolute;
+    top:540px;
+    left:120px;
+    width:100%;
+    background-color:transparent;
+    text-align:left;
+  }
+
+  #thsf2012 h1.what {
+    display:block;
+    z-index:549;
+    font-size:2em;
+    position:absolute;
+    top:595px;
+    left:120px;
+    width:100%;
+    background-color:transparent;
+    text-align:left;
+  }
+
+  #thsf2012 p.what {
+    color:#fff;
+    display:block;
+    z-index:550;
+    font-size:1.1em;
+    position:absolute;
+    top:635px;
+    left:122px;
+    width:450px;
+    background-color:transparent;
+    text-align:justify;
+    line-height:1.3em;
+  }
+
+  #thsf2012 h1 {
+    background-color:transparent;
+    display:block;
+    position:absolute;
+    text-align:left;
+  }
+
+  #thsf2012 h1.who1 {
+    z-index:551;
+    font-size:8.5em;
+    top:560px;
+    left:576px;
+    width:100%;
+    letter-spacing:4px;
+  }
+
+  #thsf2012 h1.who2 {
+    z-index:552;
+    font-size:2em;
+    top:720px;
+    left:578px;
+    width:100%;
+  }
+
+  #thsf2012 h1.who3 {
+    z-index:553;
+    font-size:3em;
+    top:740px;
+    left:578px;
+    width:100%;
+  }
+
+  #thsf2012 p.who {
+    display:block;
+    z-index:554;
+    font-size:1.1em;
+    position:absolute;
+    top:800px;
+    left:576px;
+    width:380px;
+    color:#fff;
+    text-align:left;
+  }
+
+  #thsf2012 h1.price {
+    display:block;
+    z-index:555;
+    font-size:3em;
+    position:absolute;
+    top:800px;
+    left:122px;
+    width:100%;
+    background-color:transparent;
+    text-align:left
+  }
+
+  #thsf2012 p.price {
+    color:#fff;
+    display:block;
+    z-index:556;
+    font-size:1.1em;
+    position:absolute;
+    top:855px;
+    left:122px;
+    width:150px;
+    background-color:transparent;
+    text-align:justify;
+    line-height:1.3em;
+  }
+
+  #thsf2012 #whatisthisbox {
+    display:block;
+    z-index:557;
+    position:absolute;
+    top:880px;
+    left:0;
+    width:100%;
+    background-color:transparent;
+    padding-bottom:300px;
+  }
 
 /* =============================================================================
    Media Queries
