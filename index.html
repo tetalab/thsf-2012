@@ -719,18 +719,15 @@
     });
 
     $('#navbar a').live('click',function(){
-      $('#navbar a').each(function(i){
-        $(this).removeClass('current');
-      });
+      $('#navbar a').removeClass('current');
 
       $(this).addClass("current");
       var lasection=$(this).attr("href");
       if (lasection=="mailto:contact@tetalab.org"){
         return true;
       }
-      $('section').each(function(i){
-        $(this).slideUp("slow").addClass('invisible');
-      });
+
+      $('section').slideUp("slow").addClass('invisible');
 
       $(lasection).removeClass().delay(800).slideDown("slow");
       var laclass=$(lasection).attr("id");
