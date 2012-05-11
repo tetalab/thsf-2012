@@ -187,6 +187,8 @@ display:none;
 	
 	.g1 {background-color:#420026; padding:.2em .2em .3em .2em;color:#fff;margin-bottom:.8em;font-size:1.3em;}
 	.descr {background-color:#420026; padding:.2em .2em .3em .2em;color:#fff;margin-bottom:.8em;font-size:.8em;}
+  .descr a {color:#64C864;}
+  .descr a:visited {color:#64C864;}
 	.heure{font-variant: small-caps;padding:0 .5em 0 .5em;color:#e2007a;}
 	.place{font-variant: small-caps;padding:0 .5em 0 .5em;color:#C3C3C3;}
 	a.teleprogramme{text-decoration: none;color:#fff;font-size:1em;padding-top:1em}
