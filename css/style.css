@@ -193,7 +193,7 @@ display:none;
 	.place{font-variant: small-caps;padding:0 .5em 0 .5em;color:#C3C3C3;}
 	a.teleprogramme{text-decoration: none;color:#fff;font-size:1em;padding-top:1em}
 	a.teleprogramme{text-decoration: none;color:#fff;}		
-
+	
 	.jour{padding-left:.3em;padding-top:.5em;color:#fff;background-color:transparent;text-align:left;font-size:3em;font-family: 'LiquorstoreJazz';
 	font-weight: normal;
 	font-style: normal;}
@@ -406,6 +406,13 @@ display:none;
     margin: 0 auto;
   }
 
+	.myrys{
+		display:block;
+		padding-left:145px;
+		color:#fff;
+	}
+.myrys a{text-decoration:none;color:#000}
+.myrys a:hover{text-decoration:none;color:#fff}
 /* =============================================================================
    Media Queries
    ========================================================================== */
