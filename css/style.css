@@ -405,6 +405,11 @@ display:none;
     display: block;
     margin: 0 auto;
   }
+  .descr img {
+    border: 0;
+    display: block;
+    margin: 0 auto;
+  }
 
 	.myrys{
 		display:block;
