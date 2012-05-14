@@ -121,18 +121,18 @@
     <span class="title">KEYNOTE APERO Présentation rapide du programme</span>
     <div class="descr invisible">
       <dl class="sub-nav">
-        <dd class="active"><a rel="fr">FR</a></dd>
-        <dd><a rel="en">EN</a></dd>
-        <dd><a rel="es">ES</a></dd>
+        <dd class="active"><a href="#" rel="fr">FR</a></dd>
+        <dd><a href="#" rel="en">EN</a></dd>
+        <dd><a href="#" rel="es">ES</a></dd>
       </dl>
       <span class="lang fr">
         <p>Présentation du festival THSF et de l'activité du Tetalab depuis le THSF 2.0</p>
       </span>
       <span class="lang en" style="display:none">
-        <p>Présentation du festival THSF et de l'activité du Tetalab depuis le THSF 2.0</p>
+        <p>THSF festival presentation and Tetalab activity since THSF 2.0</p>
       </span>
       <span class="lang es" style="display:none">
-        <p>Présentation du festival THSF et de l'activité du Tetalab depuis le THSF 2.0</p>
+        <p>Presentación del festival THSF, y actividad del Tetalab desde el THSF 2.0</p>
       </span>
       <ul>
         <li><a href="http://tetalab.org">Tetalab</a></li>
@@ -148,7 +148,20 @@
     <span class="place">Salle 1</span>
     <span class="title">LinuxEdu : SqueakBot & Arduino</span>
     <div class="descr invisible">
-      <p>SqueakBot est une image spéciale pour Squeak basée sur Physical etoys. Elle permet de piloter tout type de montage dont des robots à travers l'intégration de plusieurs interfaces électroniques dont les cartes Arduino. Nous présenterons différentes activités pédagogiques pour les niveaux primaire, collège et lycée et l'intérét pédagogique de leur utilisation. Nous nous attacherons aussi à présenter comment des individus, des associations et des institutions ont pu collaborer à la construction d'un outil pédagogique libre et performant.</p>
+      <dl class="sub-nav">
+        <dd class="active"><a href="#" rel="fr">FR</a></dd>
+        <dd><a href="#" rel="en">EN</a></dd>
+        <dd><a href="#" rel="es">ES</a></dd>
+      </dl>
+      <span class="lang fr">
+        <p>SqueakBot est une image spéciale pour Squeak basée sur Physical etoys. Elle permet de piloter tout type de montage dont des robots à travers l'intégration de plusieurs interfaces électroniques dont les cartes Arduino. Nous présenterons différentes activités pédagogiques pour les niveaux primaire, collège et lycée et l'intérét pédagogique de leur utilisation. Nous nous attacherons aussi à présenter comment des individus, des associations et des institutions ont pu collaborer à la construction d'un outil pédagogique libre et performant.</p>
+      </span>
+      <span class="lang en" style="display:none">
+        <p>SqueakBot is a special image for Squeak based on Physical etoys . It can drive any type of assembly like robots through the integration of multiple electronic interfaces with the Arduino. We will present various educational activities for elementary, middle and high schools and the educational value of their use. We will also present how to individuals, associations and institutions were able to collaborate in building a free and powerful educational tool.</p>
+      </span>
+      <span class="lang es" style="display:none">
+        <p>SqueakBot es una imagen especial para Squeak basada en Etoys físico. Se puede manejar cualquier tipo de reunión que los robots a través de la integración de múltiples interfaces electrónicas con el Arduino. Vamos a presentar diversas actividades educativas para las escuelas primarias, intermedias y secundarias y el valor educativo de su uso. También presentará a cómo los individuos, asociaciones e instituciones fueron capaces de colaborar en la construcción de una herramienta educativa libre y poderoso.</p>
+      </span>
       <ul>
         <li>LinuxEdu : <a href="http://linuxedu.ac-toulouse.fr/doku.php">linuxedu.ac-toulouse.fr</a></li>
         <li>Squeakbot : <a href="https://launchpad.net/squeakbot">launchpad.net/squeakbot</a></li>
@@ -804,65 +817,10 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
+<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+
 <script src="js/plugins.js"></script>
 <script src="js/script.js"></script>
-<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
-<script>
-  jQuery(document).ready(function ($) {
-
-    var hash = window.location.hash;
-
-    if( hash.length > 0 && 
-        ( hash === "#thsf2012"      ||
-          hash === "#conferences"   ||
-          hash === "#performances"  ||
-          hash === "#ateliers"      ||
-          hash === "#concerts"      ||
-          hash === "#streaming"
-        )
-    ) {
-      $('#navbar a').removeClass('current');
-      $("#navbar a[href=" + hash + "]").addClass('current');
-
-      $('section').addClass('invisible');
-      $(hash).removeClass("invisible");
-
-      $('body').removeClass().addClass(hash.slice(1));
-    }
-
-    // Picto click to open event description
-    //
-    // Display event description if currently hidden
-    // and close it if currently shown.
-    //
-    // It should not interact with other event description
-    $(".picto").live('click',function(){
-      var descr = $(this).parent().children('.descr');
-      if(descr.hasClass("invisible")) {
-        descr.show("slow").removeClass("invisible");
-      } else {
-        descr.hide("slow").addClass("invisible");
-      }
-    });
-
-    $('#navbar a').live('click',function(){
-      $('#navbar a').removeClass('current');
-      $(this).addClass("current");
-
-      var lasection=$(this).attr("href");
-      window.location.hash = lasection;
-
-      if (lasection=="mailto:contact@tetalab.org"){
-        return true;
-      }
-
-      $('section').addClass('invisible').delay(800);
-      $(lasection).removeClass('invisible');
-      $('body').removeClass().addClass(lasection.slice(1));
-      return false;
-    });
-  });
-</script>
 
 </body>
 </html>

@@ -421,6 +421,10 @@ dl.sub-nav {
   overflow: hidden;
   margin: -4px 0 18px -9px;
   padding-top: 4px;
+  float: right;
+  top: -25px;
+  left: -5px;
+  position: relative;
 }
 
 dl.sub-nav dt, dl.sub-nav dd {
@@ -428,9 +432,6 @@ dl.sub-nav dt, dl.sub-nav dd {
   display: inline;
   margin-left: 9px;
   margin-bottom: 4px;
-  float: right;
-  top: -25px;
-  position: relative;
 }
 
 dl.sub-nav dd a {
@@ -439,7 +440,7 @@ dl.sub-nav dd a {
 }
 
 dl.sub-nav dd.active a {
-  background: #00A6FC;
+  background: #64C864;
   color: white;
   padding: 3px 9px;
 }
