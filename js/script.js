@@ -31,11 +31,15 @@ jQuery(document).ready(function ($) {
   //
   // It should not interact with other event description
   $(".picto").live('click',function(){
-    var descr = $(this).parent().children('.descr');
-    if(descr.hasClass("invisible")) {
-      descr.show("slow").removeClass("invisible");
+    if($(this).hasClass('all')){
+      $(this).closest("section").find(".descr").removeClass("invisible");
     } else {
-      descr.hide("slow").addClass("invisible");
+      var descr = $(this).parent().children('.descr');
+      if(descr.hasClass("invisible")) {
+        descr.show("slow").removeClass("invisible");
+      } else {
+        descr.hide("slow").addClass("invisible");
+      }
     }
   });
 
