@@ -141,7 +141,8 @@ display:none;
 	.concerts{background-image: url('../img/concerts.png');background-color:#f5a000;}
 	.thsf2012{background-image: url('../img/thsf2012.png');background-color:#e2007a;}
 	.streaming{background-image: url('../img/streaming.png');background-color:#504A3C;}
-	#conferences,#performances,#concerts,#ateliers,#thsf2012{width:800px;margin-left:110px;}
+	section{width:800px;margin-left:110px;}
+  #player{width: 800px;height: 600px;}
 	
 	.LiquorstoreJazz-Italic { 
 		font-family: LiquorstoreJazz-Italic;

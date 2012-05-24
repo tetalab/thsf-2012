@@ -81,5 +81,25 @@ jQuery(document).ready(function ($) {
     }
 
     return false;
-  })
+  });
+
+  $f("player", "http://releases.flowplayer.org/swf/flowplayer-3.2.11.swf", {
+    clip: {
+      // configure clip to use hddn as our provider, refering to our rtmp plugin
+      url: 'livestream',
+      live: true,
+      provider: 'rtmp'
+    },
+
+
+    plugins: {
+
+      // here is our rtmp plugin configuration
+      rtmp: {
+        url: "flowplayer.rtmp-3.2.10.swf",
+        // netConnectionUrl defines where the streams are found
+        netConnectionUrl: 'rtmp://88.191.135.70/live/'
+      }
+    }
+  });
 });
