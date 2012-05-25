@@ -84,14 +84,17 @@ jQuery(document).ready(function ($) {
   });
 
   $f("player", "http://releases.flowplayer.org/swf/flowplayer-3.2.11.swf", {
-    clip: {
+//    clip: {
       // configure clip to use hddn as our provider, refering to our rtmp plugin
-      url: 'livestream',
-      live: true,
-      provider: 'rtmp'
-    },
+ //     url: 'livestream',
+  //    live: true,
+  //    provider: 'rtmp'
+  //  },
 
-
+    playlist:[
+        { url: "/img/streaming.jpg", duration: 5 },
+        {   url: 'livestream', live: true, provider: 'rtmp' }
+    ] 
     plugins: {
 
       // here is our rtmp plugin configuration
