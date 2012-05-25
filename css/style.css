@@ -170,6 +170,7 @@ display:none;
 		font-style: normal;
 	}
 	
+  .white {color: #CCC;}
 	.green {color: #A7D259;}
 	.orange {color: #D48900;}
 	.gris {color: #9D9A96;}
@@ -514,6 +515,7 @@ dl.sub-nav dd.active a {
 	top: 3px;
 }
 
+.csstransforms #navbar a.rotatif.white span {color: #CCC;}
 .csstransforms #navbar a.rotatif.green span {color: #A7D259;}
 .csstransforms #navbar a.rotatif.orange span {color: #D48900;}
 .csstransforms #navbar a.rotatif.gris span {color: #9D9A96;}
