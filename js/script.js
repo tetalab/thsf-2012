@@ -94,7 +94,7 @@ jQuery(document).ready(function ($) {
     playlist:[
         { url: "/img/streaming.jpg", duration: 5 },
         {   url: 'livestream', live: true, provider: 'rtmp' }
-    ] 
+    ], 
     plugins: {
 
       // here is our rtmp plugin configuration
