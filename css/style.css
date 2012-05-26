@@ -142,7 +142,7 @@ display:none;
 	.thsf2012{background-image: url('../img/thsf2012.png');background-color:#e2007a;}
 	.streaming{background-image: url('../img/streaming.png');background-color:#504A3C;}
 	section{width:800px;margin-left:110px;}
-  #player{width: 800px;height: 600px;}
+  #player{width: 640px;height: 390px;}
 	
 	.LiquorstoreJazz-Italic { 
 		font-family: LiquorstoreJazz-Italic;
