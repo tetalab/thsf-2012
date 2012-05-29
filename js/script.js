@@ -64,7 +64,7 @@ jQuery(document).ready(function ($) {
   //
   // it'll display selected lang in current box
   // and set all boxes to this same lang
-  $('.sub-nav a').click(function(){
+  $('.sub-nav a.section').click(function(){
 
     if(!$(this).closest("dd").hasClass("active")){
 
